@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel='shortcut icon' href='../assets/favicon.png' type='image/png'>
+  <link rel='stylesheet' href='../assets/retro.css'>
+  <title>Madmadi | easter egg</title>
+</head>
+<body>
+  <h3>Hey! you found the</h3>
+  <h1><a>Easter Egg</a></h1>
+  <p>Probably you knew my last name °~°</p>
+  <p>Look at the url, it's almost my full name. cool right? ᕕ(ᐛ)ᕗ</p>
+  <h4>
+    Ok, what's going on here? this is an easter egg
+    (you can read more <a href='https://en.wikipedia.org/wiki/Easter_egg_(media)'>here</a>)
+    and I set a gift for those who find this page (because it's special to me),
+    so if you text/mail me
+    <pre>E_EGG_RAJI</pre>
+    then I invite you for a coffe or even a dinner (depends on my mood), hope to meet (ᵔᴥᵔ)
+    <p>- Back to <a href='/'>home</a></p>
+  </h4>
+  <script>
+    if (window.location.host === 'moa.madmadi.me')
+      if (localStorage.getItem('seenBefore'))
+        window.location.href = window.location.origin;
+      else localStorage.setItem('seenBefore', true);
+    else window.location.href = window.location.origin;
+  </script>
+</body>
+</html>

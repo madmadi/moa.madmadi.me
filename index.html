@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel='shortcut icon' href='./assets/favicon.png' type='image/png'>
+  <link rel='stylesheet' href='./assets/retro.css'>
+  <title>Madmadi | Mohammad Mahdi, the mad one.</title>
+</head>
+<!-- 
+RRRRRRRRRRRRRRRRR                      jjjj   iiii  
+R::::::::::::::::R                    j::::j i::::i 
+R::::::RRRRRR:::::R                    jjjj   iiii  
+RR:::::R     R:::::R                                
+  R::::R     R:::::R  aaaaaaaaaaaaa  jjjjjjjiiiiiii 
+  R::::R     R:::::R  a::::::::::::a j:::::ji:::::i 
+  R::::RRRRRR:::::R   aaaaaaaaa:::::a j::::j i::::i 
+  R:::::::::::::RR             a::::a j::::j i::::i 
+  R::::RRRRRR:::::R     aaaaaaa:::::a j::::j i::::i 
+  R::::R     R:::::R  aa::::::::::::a j::::j i::::i 
+  R::::R     R:::::R a::::aaaa::::::a j::::j i::::i 
+  R::::R     R:::::Ra::::a    a:::::a j::::j i::::i 
+RR:::::R     R:::::Ra::::a    a:::::a j::::ji::::::i
+R::::::R     R:::::Ra:::::aaaa::::::a j::::ji::::::i
+R::::::R     R:::::R a::::::::::aa:::aj::::ji::::::i
+RRRRRRRR     RRRRRRR  aaaaaaaaaa  aaaaj::::jiiiiiiii
+                                      j::::j        
+                            jjjj      j::::j        
+                           j::::jj   j:::::j        
+                           j::::::jjj::::::j        
+                            jj::::::::::::j         
+                              jjj::::::jjj          
+                                 jjjjjj             
+ -->
+<body>
+  <p style='float:right'>
+    <span>Born @ <time>May 28</time></span>
+    <br>
+    <small>You can give me a gift then (ツ)_/¯</small>
+  </p>
+  <br>
+  <br>
+  <p>Hi, this is</p>
+  <h1 style='margin-bottom:0'>Madmadi,</h1>
+  <small>minified or maybe uglified form of <strong>Mohammad Mahdi</strong>, my first name.</small>
+  <br>
+  <br>
+  <hr>
+  <small>If I want tell a little bit about my self it would be:</small>
+  <blockquote>
+    <h4 style='margin-top:0'>
+      Currently I'm a Javascript developer almost in front-end,
+      I love software engineering at all
+      and I think it's my desirable industry,
+      therefore robotics and astronomy are my favorites.
+    </h4>
+  </blockquote>
+  <br>
+  <p>I Would be happy if</p>
+  <ul>
+    <li>you contact me throgh</li>
+    <ul>
+      <li><a href='https://github.com/moamadmadi'>Github</a></li>
+      <li><a href='https://trello.com/moamadmadi'>Trello</a></li>
+      <li><a href='https://linkedin.com/in/moamadmadi'>LinkedIn</a></li>
+      <li><a href='https://twitter.com/moamadmadi'>Twitter</a></li>
+      <li><small>or wherever you found <a>@moamadmadi</a></small></li>
+    </ul>
+    <li>or mail me at <a href='mailto:mo@madmadi.me'>mo@madmadi.me</a></li>
+  </ul>
+  <hr>
+  <dl>
+    <dt><small>if you like the page stylesheet, <a href='https://github.com/markdowncss/retro'>check this out</a>.</small></dt>
+    <dt><small id='lastUpdateDate'></small></dt>
+  </dl>
+  <script>
+    // Get last update date
+    fetch('https://api.github.com/repos/markdowncss/retro/commits/master')
+    .then(res => res.json().then(res => {
+      let date = new Date(res.commit.author.date);
+      document.getElementById('lastUpdateDate').innerHTML = `last update ${date}.`;
+    }));
+  </script>
+</body>
+</html>
