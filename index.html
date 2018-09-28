@@ -2,6 +2,15 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
+  <meta name='description' content='Madmadi Personal Web Page, you can contact me through email at mo@madmadi.me or social media at @moamadmadi'>
+  <meta name='keywords' content='Web,JavaScript,Front-end,Software,Developer,Engineer'>
+  <meta name='author' content='mo@madmadi.me'>
+  <meta property='og:type' content='website'>
+  <meta property='og:url' content='https://moa.madmadi.me'>
+  <meta property='og:title' content='Madmadi Personal Web Page'>
+  <meta property='og:description' content='You can contact me through email at mo@madmadi.me or social media at @moamadmadi'>
+  <meta property='og:image' content='./assets/logo.jpg'>
+  <meta property='og:image:type' content='image/jpeg' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <link rel='shortcut icon' href='./assets/favicon.png' type='image/png'>
@@ -34,49 +43,59 @@ RRRRRRRR     RRRRRRR  aaaaaaaaaa  aaaaj::::jiiiiiiii
                                  jjjjjj             
  -->
 <body>
-  <p style='float:right'>
-    <span>Born @ <time>May 28</time></span>
+  <main>
+    <header>
+      <aside style='float:right'>
+        <span>Born @ <time>May 28</time></span>
+        <br>
+        <small>You can give me a gift then (ツ)_/¯</small>
+        <br>
+      </aside>
+      <br>
+      <p>Hi, this is</p>
+      <h1 style='margin-bottom:0'>Madmadi,</h1>
+      <small>minified or maybe uglified form of <strong>Mohammad Mahdi</strong>, my first name.</small>
+      <br>
+      <hr>
+    </header>
     <br>
-    <small>You can give me a gift then (ツ)_/¯</small>
-  </p>
-  <br>
-  <br>
-  <p>Hi, this is</p>
-  <h1 style='margin-bottom:0'>Madmadi,</h1>
-  <small>minified or maybe uglified form of <strong>Mohammad Mahdi</strong>, my first name.</small>
-  <br>
-  <br>
-  <hr>
-  <small>If I want tell a little bit about my self it would be:</small>
-  <blockquote>
-    <h4 style='margin-top:0'>
-      Currently I'm a Javascript developer almost in front-end,
-      I love software engineering at all
-      and I think it's my desirable industry,
-      therefore robotics and astronomy are my favorites.
-    </h4>
-  </blockquote>
-  <br>
-  <p>I Would be happy if</p>
-  <ul>
-    <li>you contact me throgh</li>
-    <ul>
-      <li><a href='https://github.com/moamadmadi'>Github</a></li>
-      <li><a href='https://trello.com/moamadmadi'>Trello</a></li>
-      <li><a href='https://linkedin.com/in/moamadmadi'>LinkedIn</a></li>
-      <li><a href='https://twitter.com/moamadmadi'>Twitter</a></li>
-      <li><small>or wherever you found <a>@moamadmadi</a></small></li>
-    </ul>
-    <li>or mail me at <a href='mailto:mo@madmadi.me'>mo@madmadi.me</a></li>
-  </ul>
-  <hr>
-  <dl>
-    <dt><small>if you like the page stylesheet, <a href='https://github.com/markdowncss/retro'>check this out</a>.</small></dt>
-    <dt><small id='lastUpdateDate'></small></dt>
-  </dl>
+    <article>
+      <small>If I want tell a little bit about my self it would be:</small>
+      <blockquote>
+        <h4 style='margin-top:0'>
+          Currently I'm a Javascript developer almost in front-end,
+          I love software engineering at all
+          and I think it's my desirable industry,
+          therefore robotics and astronomy are my favorites.
+        </h4>
+      </blockquote>
+    </article>
+    <br>
+    <article>
+      <p>I Would be happy if</p>
+      <ul>
+        <li>you contact me throgh</li>
+        <ul>
+          <li><a href='https://github.com/moamadmadi'>Github</a></li>
+          <li><a href='https://trello.com/moamadmadi'>Trello</a></li>
+          <li><a href='https://linkedin.com/in/moamadmadi'>LinkedIn</a></li>
+          <li><a href='https://twitter.com/moamadmadi'>Twitter</a></li>
+          <li><small>or wherever you found <a>@moamadmadi</a></small></li>
+        </ul>
+        <li>or mail me at <a href='mailto:mo@madmadi.me'>mo@madmadi.me</a></li>
+      </ul>
+    </article>
+  </main>
+  <footer>
+    <hr>
+    <dl>
+      <dt><small>If you'd like the page stylesheet, <a href='https://github.com/markdowncss/retro'>check this out</a>.</small></dt>
+      <dt><small id='lastUpdateDate'></small></dt>
+    </dl>
+  </footer>
   <script>
     // Get last update date
-    fetch('https://api.github.com/repos/markdowncss/retro/commits/master')
+    fetch('https://api.github.com/repos/moamadmadi/moa.madmadi.me/commits/master')
     .then(res => res.json().then(res => {
       let date = new Date(res.commit.author.date);
       document.getElementById('lastUpdateDate').innerHTML = `last update ${date}.`;
