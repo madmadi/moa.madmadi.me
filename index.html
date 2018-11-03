@@ -3,20 +3,108 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='description' content='Madmadi Personal Web Page, you can contact me through email at mo@madmadi.me or social media at @moamadmadi'>
-  <meta name='keywords' content='Web,JavaScript,Front-end,Software,Developer,Engineer'>
   <meta name='author' content='mo@madmadi.me'>
   <meta property='og:type' content='website'>
   <meta property='og:url' content='https://moa.madmadi.me'>
   <meta property='og:title' content='Madmadi Personal Web Page'>
   <meta property='og:description' content='You can contact me through email at mo@madmadi.me or social media at @moamadmadi'>
-  <meta property='og:image' content='./assets/logo.jpg'>
+  <meta property='og:image' content='https://moa.madmadi.me/assets/logo.jpg'>
   <meta property='og:image:type' content='image/jpeg' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <link rel='shortcut icon' href='./assets/favicon.png' type='image/png'>
-  <link rel='stylesheet' href='./assets/retro.css'>
+  <link rel='shortcut icon' href='assets/favicon.png' type='image/png'>
+  <link rel='stylesheet' href='assets/retro.css'>
   <title>Madmadi | Mohammad Mahdi, the mad one.</title>
+  <style>
+    aside {
+      float: right;
+    }
+    article > h1 {
+      margin-bottom: 0;
+    }
+    article > h1 + p {
+      margin-top: 0;
+    }
+    article > section > h2 {
+      font-size: 1.2rem;
+    }
+    footer,
+    footer > p,
+    .font-small {
+      font-size: .7rem;
+    }
+  </style>
 </head>
+<body>
+  <aside>
+    <details>
+      <summary>Born @ <time datetime='05-28'>May 28</time></summary>
+      <span class='font-small'>You can give me a gift then (ツ)_/¯.</span>
+    </details>
+  </aside>
+  <main>
+    <h6 hidden>Madmadi Personal Web Page</h6>
+    <article>
+      <p>Hi, this is</p>
+      <h1>Madmadi</h1>
+      <p class='font-small'>
+        <dfn>Madmadi</dfn>
+        is minified or maybe uglified form of
+        <strong>Mohammad Mahdi</strong>,
+        my first name.
+      </p>
+      <hr>
+      <section>
+        <h2>If I want tell a little bit about my self it would be,</h2>
+        <blockquote>
+          <p>
+            Currently I'm a JavaScript & NodeJS developer almost in Front-end,
+            I love software engineering at all
+            and I think it's my desirable industry,
+            therefore robotics and astronomy are my favorites.
+          </p>
+        </blockquote>
+      </section>
+      <section>
+        <h2>I would be happy if,</h2>
+        <address>
+          <ul>
+            <li>You follow me through</li>
+            <li>
+              <ul>
+                <li><a href='https://github.com/moamadmadi'>Github</a></li>
+                <li><a href='https://stackoverflow.com/users/9167116/madmadi'>Stackoverflow</a></li>
+                <li><a href='https://linkedin.com/in/moamadmadi'>LinkedIn</a></li>
+                <li><a href='https://remote.com/moamadmadi'>Remote</a></li>
+                <li><a href='https://twitter.com/moamadmadi'>Twitter</a></li>
+                <li><small>Or wherever you found <a>@moamadmadi</a></small></li>
+              </ul>
+            </li>
+            <li>Or mail me at <a href='mailto:mo@madmadi.me'>mo@madmadi.me</a></li>
+          </ul>
+        </address>
+      </section>
+      <p>You can also check <a href='https://goo.gl/8wH6Ap'>my resume</a>.</p>
+    </article>
+  </main>
+  <footer>
+    <hr>
+    <dl>
+      <dt>Last update</dt>
+      <dd id='lastUpdateDate'>loading ...</dd>
+    </dl>
+    <p>If you'd like the page stylesheet, <a href='https://github.com/markdowncss/retro'>check its repository</a>.</p>
+  </footer>
+  <script>
+    // Get last commit date
+    fetch('https://api.github.com/repos/moamadmadi/moa.madmadi.me/commits/master')
+    .then(res => res.json().then(res => {
+      let date = new Date(res.commit.author.date);
+      document.getElementById('lastUpdateDate').innerHTML = `${date}.`;
+    }));
+  </script>
+</body>
+</html>
 <!-- 
 RRRRRRRRRRRRRRRRR                      jjjj   iiii  
 R::::::::::::::::R                    j::::j i::::i 
@@ -42,64 +130,3 @@ RRRRRRRR     RRRRRRR  aaaaaaaaaa  aaaaj::::jiiiiiiii
                               jjj::::::jjj          
                                  jjjjjj             
  -->
-<body>
-  <main>
-    <header>
-      <aside style='float:right'>
-        <span>Born @ <time>May 28</time></span>
-        <br>
-        <small>You can give me a gift then (ツ)_/¯</small>
-        <br>
-      </aside>
-      <br>
-      <p>Hi, this is</p>
-      <h1 style='margin-bottom:0'>Madmadi,</h1>
-      <small>minified or maybe uglified form of <strong>Mohammad Mahdi</strong>, my first name.</small>
-      <br>
-      <hr>
-    </header>
-    <br>
-    <article>
-      <small>If I want tell a little bit about my self it would be:</small>
-      <blockquote>
-        <h4 style='margin-top:0'>
-          Currently I'm a Javascript developer almost in front-end,
-          I love software engineering at all
-          and I think it's my desirable industry,
-          therefore robotics and astronomy are my favorites.
-        </h4>
-      </blockquote>
-    </article>
-    <br>
-    <article>
-      <p>I Would be happy if</p>
-      <ul>
-        <li>you follow me through</li>
-        <ul>
-          <li><a href='https://github.com/moamadmadi'>Github</a></li>
-          <li><a href='https://trello.com/moamadmadi'>Trello</a></li>
-          <li><a href='https://linkedin.com/in/moamadmadi'>LinkedIn</a></li>
-          <li><a href='https://twitter.com/moamadmadi'>Twitter</a></li>
-          <li><small>or wherever you found <a>@moamadmadi</a></small></li>
-        </ul>
-        <li>or mail me at <a href='mailto:mo@madmadi.me'>mo@madmadi.me</a></li>
-      </ul>
-    </article>
-  </main>
-  <footer>
-    <hr>
-    <dl>
-      <dt><small>If you'd like the page stylesheet, <a href='https://github.com/markdowncss/retro'>check this out</a>.</small></dt>
-      <dt><small id='lastUpdateDate'></small></dt>
-    </dl>
-  </footer>
-  <script>
-    // Get last update date
-    fetch('https://api.github.com/repos/moamadmadi/moa.madmadi.me/commits/master')
-    .then(res => res.json().then(res => {
-      let date = new Date(res.commit.author.date);
-      document.getElementById('lastUpdateDate').innerHTML = `last update ${date}.`;
-    }));
-  </script>
-</body>
-</html>
