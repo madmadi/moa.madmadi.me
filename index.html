@@ -2,12 +2,12 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
-  <meta name='description' content='Madmadi Personal Web Page, you can contact me through email at mo@madmadi.me or social media at @moamadmadi'>
+  <meta name='description' content='Madmadi Personal Web Page, you can contact me through email at mo@madmadi.me'>
   <meta name='author' content='mo@madmadi.me'>
   <meta property='og:type' content='website'>
   <meta property='og:url' content='https://moa.madmadi.me'>
   <meta property='og:title' content='Madmadi Personal Web Page'>
-  <meta property='og:description' content='You can contact me through email at mo@madmadi.me or social media at @moamadmadi'>
+  <meta property='og:description' content='You can contact me through email at mo@madmadi.me'>
   <meta property='og:image' content='https://moa.madmadi.me/assets/logo.jpg'>
   <meta property='og:image:type' content='image/jpeg' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -73,12 +73,11 @@
             <li>You follow me through</li>
             <li>
               <ul>
-                <li><a href='https://github.com/moamadmadi'>Github</a></li>
+                <li><a href='https://github.com/madmadi'>Github</a></li>
                 <li><a href='https://stackoverflow.com/users/9167116/madmadi'>Stackoverflow</a></li>
-                <li><a href='https://linkedin.com/in/moamadmadi'>LinkedIn</a></li>
-                <li><a href='https://remote.com/moamadmadi'>Remote</a></li>
-                <li><a href='https://twitter.com/moamadmadi'>Twitter</a></li>
-                <li><small>Or wherever you found <a>@moamadmadi</a></small></li>
+                <li><a href='https://linkedin.com/in/madmadi'>LinkedIn</a></li>
+                <li><a href='https://remote.com/madmadi'>Remote</a></li>
+                <li><a href='https://twitter.com/themadmadi'>Twitter</a></li>
               </ul>
             </li>
             <li>Or mail me at <a href='mailto:mo@madmadi.me'>mo@madmadi.me</a></li>
@@ -97,7 +96,7 @@
   </footer>
   <script>
     // Get last commit date
-    fetch('https://api.github.com/repos/moamadmadi/moa.madmadi.me/commits/master')
+    fetch('https://api.github.com/repos/madmadi/moa.madmadi.me/commits/master')
     .then(res => res.json().then(res => {
       let date = new Date(res.commit.author.date);
       document.getElementById('lastUpdateDate').innerHTML = `${date}.`;
