@@ -6,10 +6,9 @@ Hi, this is
 ### I would be happy if,
 - You [visit the page](https://moa.madmadi.me)
 - Follow me through
-   - [Github](https://github.com/moamadmadi)
+   - [Github](https://github.com/madmadi)
    - [Stackoverflow](https://stackoverflow.com/users/9167116/madmadi)
-   - [LinkedIn](https://linkedin.com/in/moamadmadi)
-   - [Remote](https://remote.com/moamadmadi)
-   - [Twitter](https://twitter.com/moamadmadi)
-   - or wherever you found `@moamadmadi`
+   - [LinkedIn](https://linkedin.com/in/madmadi)
+   - [Remote](https://remote.com/madmadi)
+   - [Twitter](https://twitter.com/themadmadi)
 - Or mail me at [mo@madmadi.me](mailto:mo@madmadi.me)
